@@ -10,6 +10,11 @@ und / oder die Verknüfung > Erweitert << Als Administrator ausführen.
 ```
 fsutil behavior set disablelastaccess 3
 ```
+
+## VMWare Workstation 25H2
+Lustigerweise funktioniert VMWare Workstation 25H2 bei mir sehr performant wie die früheren Versionen. Scheiß Firma, klar steht aus der Frage, wieder gutes Produkt, seltsameweise ja.
+
+
 ## Die Ultimative Performance
 Ich weiß nicht welcher von dennen der Perfomancebringer ist, ich denke `sched.mem.pshare.enable`. Da wird keine Speicherdatei auf der Fertplatte erstellt.
 
@@ -28,4 +33,12 @@ unity.wasCapable = "FALSE"
 sched.mem.pshare.enable = "FALSE"
 snapshot.disabled = "TRUE"
 MemAllowAutoScaleDown = "FALSE"
+```
+
+## Tastatur Lag
+Bei Problemen mit Tastaturverzögerung kann man diese beiden Punkte aktivieren. Bei mir bringt das einen riesigen Performancevorteil.
+
+```
+mks.vk.syncPerEndFrame = "TRUE"
+mks.dx12.syncPerEndFrame = "TRUE"
 ```
