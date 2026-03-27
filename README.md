@@ -17,9 +17,11 @@ Lustigerweise funktioniert VMWare Workstation 25H2 bei mir sehr performant wie d
 
 ## Die Ultimative Performance
 Ich weiß nicht welcher von dennen der Perfomancebringer ist, ich denke `sched.mem.pshare.enable`. Da wird keine Speicherdatei auf der Fertplatte erstellt.
+Die ersten beiden Zeilen haben nichts mit Performance zu tun, verhindern aber, dass sich in dem Ordner ständig Dateien generieren.
 
 ```
 logging = "FALSE"
+vmx.scoreboard.enabled = "FALSE"
 MemTrimRate = "0"
 prefvmx.minVmMemPct = "100"
 mainMem.useNamedFile = "FALSE"
